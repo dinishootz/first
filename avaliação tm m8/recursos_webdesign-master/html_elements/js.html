@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<meta charset="utf-8">
+<title>JS</title>
+<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<header>
+	<div id="topHeader">
+		<a class="active" href="index.html">HTML</a>
+		<a href="css.html">CSS</a>
+		<a href="js.html">JS</a>
+		<div id="navButton">&#9776;</div>
+	</div>   
+
+	<div id="navWrapper">
+		
+		<div id="nav">
+			<a id="closeMenu" class="menuBtn" >&times;</a>
+			<a class="menuBtn" href="#root">Fontes em CSS</a>
+			<a class="menuBtn" href="#metadata">Cores em CSS RGB</a>
+			<a class="menuBtn" href="#section-root">Cores em CSS RGBA</a>
+			<a class="menuBtn" href="#content">Posicionamento</a>
+		</div>
+
+	</div>
+	
+</header>
+
+<div id="wrapper">
+	<div id="divLogo"><img id="logo" src="JS_logo.svg" alt=""></div>
+	<div id="goUp">
+		<a href="#root">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+	</div>
+<section id="root">
+<div id="c_1" class="container">
+		<h2>Fontes em CSS</h2>
+	<ul>
+		<li class="li"><a href="#">html</a></li> 
+			<p>
+			O elemento HTML html representa a raiz (elemento de nível superior) de um documento HTML, portanto, também é chamado de elemento raiz . Todos os outros elementos devem ser descendentes desse elemento.
+			</p>
+	</ul>
+</div>
+</section>
+	<hr>
+<section id="metadata">
+<div id="c_2" class="container">
+		<h2>Cores em CSS RGB</h2>
+	<ul>
+		<li class="teste li"><a href="#">link</a></li>
+			<p>
+			O elemento HTML External Resource Link (link) especifica relações entre o documento atual e um recurso externo. Esse elemento é mais comumente usado para vincular a folhas de estilo , mas também é usado para estabelecer ícones de sites (ícones de estilo "favicon" e ícones de tela inicial / aplicativos móveis), entre outras coisas.
+			</p>
+		<li class="li"><a href="#">meta</a></li>
+			<p>
+			O HTML meta elemento representa metadados que não podem ser representados por outros elementos meta relacionada à HTML, como base, link, script, styleou title.
+			</p>
+		<li class="li"><a href="#">style</a></li>
+			<p>
+			O elemento HTMLstyle contém informações de estilo para um documento ou parte de um documento.
+			</p>
+		<li class="li"><a href="#">title</a></li>
+			<p>
+			O elemento HTML Title (title) define o título do documento exibido na barra de título de um navegador ou na guia de uma página.
+			</p>
+	</ul>
+</div>
+</section>
+	<hr>
+<section id="section-root">
+<div id="c_3" class="container">
+		<h2>Cores em CSS RGBA</h2>
+	<ul>
+		<li class="li"><a href="#">body</a></li>
+			<p>
+			O elemento HTML body representa o conteúdo de um documento HTML. Pode haver apenas um body elemento em um documento.
+			</p>
+	</ul>
+</div>
+</section>
+	<hr>
+<section id="content">
+<div id="c_4" class="container">
+		<h2>Posicionamento</h2>
+	<ul>
+		<li class="li"><a href="#">adress</a></li>
+			<p>
+			O elemento HTML address indica que o HTML fornecido fornece informações de contato para uma pessoa ou pessoas ou para uma organização.
+			</p>
+		<li class="li"><a href="#">article</a></li>
+			<p>
+			O elemento HTML article representa uma composição autônoma em um documento, página, aplicativo ou site, que se destina a ser distribuído independentemente ou reutilizável (por exemplo, em sindicalização). Exemplos incluem: uma postagem no fórum, uma revista ou artigo de jornal ou uma entrada de blog.
+			</p>
+	</ul>
+</div>
+</section>
+</div><!-- /wrapper -->
+
+<footer>
+	<a rel="license" href="direitos.html" target="_blank">
+		<img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+		Este trabalho está licenciado com uma Licença 
+		<p>2018 &copy; EPCI</p>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//$(nomeDoElemento).nomeDaAcção
+		$('#nav').slideUp(1);
+	
+		$('#navButton').on('click', function(){
+			$("#nav").delay(10).animate({width: 'toggle'}, 500);
+		});
+
+		$('.menuBtn').on('click', function(){
+			$("#nav").delay(10).animate({width: 'toggle'}, 500);
+			
+		});
+		
+		/* obter intervalo entre cada item */
+
+		$('p').append( "<br>").append( "<hr>").append("<br>");
+		
+	});
+</script>
+</body>
+</html>
